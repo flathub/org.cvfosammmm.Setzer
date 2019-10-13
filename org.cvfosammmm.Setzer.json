@@ -109,7 +109,9 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/cvfosammmm/Setzer.git"
+                    "url": "https://github.com/cvfosammmm/Setzer.git",
+                    "branch": "master",
+                    "commit": "802a44edc40e5d1ce7df9d0074772ec1939a3a7e"
                 }
             ]
         }
