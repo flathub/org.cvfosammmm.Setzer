@@ -16,7 +16,6 @@
         "--filesystem=~/.config/dconf:ro",
         "--env=PATH=/app/bin:/usr/bin:/app/bin/x86_64-linux",
         "--env=TEXMFCACHE=$XDG_CACHE_HOME",
-        "--env=LC_ALL=C",
         "--env=TEXINPUTS=.:~/texmf/:",
         "--talk-name=ca.desrt.dconf",
         "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
