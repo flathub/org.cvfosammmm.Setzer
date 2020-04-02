@@ -90,29 +90,16 @@
         },
         {
             "name": "setzer",
-            "buildsystem": "simple",
-            "build-commands": [
-                "mkdir -p /app/share/applications",
-                "cp resources/org.cvfosammmm.Setzer.desktop /app/share/applications/org.cvfosammmm.Setzer.desktop",
-                "mkdir -p /app/share/icons/hicolor/scalable/apps",
-                "cp resources/images/org.cvfosammmm.Setzer.svg /app/share/icons/hicolor/scalable/apps/org.cvfosammmm.Setzer.svg",
-                "mkdir -p /app/share/metainfo",
-                "cp resources/org.cvfosammmm.Setzer.appdata.xml /app/share/metainfo/org.cvfosammmm.Setzer.appdata.xml",
-                "mkdir -p /app/bin",
-                "cp -R app /app/bin/",
-                "cp -R dialogs /app/bin/",
-                "cp -R document /app/bin/",
-                "cp -R helpers /app/bin/",
-                "cp -R resources /app/bin/",
-                "cp -R workspace /app/bin/",
-                "install -D __main__.py /app/bin/setzer"
+            "buildsystem": "meson",
+            "config-opts": [
+                "--buildtype=release"
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/cvfosammmm/Setzer.git",
-                    "tag": "v0.2.1",
-                    "commit": "1ae9004a2a2a5836cf2f553fd5998c27e63ce867"
+                    "tag": "v0.2.2",
+                    "commit": "23beeb98014cae71307556c2b61f77f31b15d575"
                 }
             ]
         }
