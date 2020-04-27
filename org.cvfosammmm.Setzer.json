@@ -1,7 +1,7 @@
 {
     "app-id": "org.cvfosammmm.Setzer",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.34",
+    "runtime-version": "3.36",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": ["org.freedesktop.Sdk.Extension.texlive"],
     "command": "setzer",
@@ -112,8 +112,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/cvfosammmm/Setzer.git",
-                    "tag": "v0.2.3",
-                    "commit": "042aab42f66942dcfdcc428c529c818c62236ecd"
+                    "tag": "v0.2.4",
+                    "commit": "fda1506ead245fb2fc501151b4961272e021750b"
                 }
             ]
         }
