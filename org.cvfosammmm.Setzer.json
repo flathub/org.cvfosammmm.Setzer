@@ -112,8 +112,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/cvfosammmm/Setzer.git",
-                    "tag": "v0.2.4",
-                    "commit": "fda1506ead245fb2fc501151b4961272e021750b"
+                    "tag": "v0.2.5",
+                    "commit": "347c52fb8d364610d2319ae7d9ee1a5eb87f28f7"
                 }
             ]
         }
