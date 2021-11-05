@@ -1,7 +1,7 @@
 {
     "app-id": "org.cvfosammmm.Setzer",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.38",
+    "runtime-version": "41",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": ["org.freedesktop.Sdk.Extension.texlive"],
     "command": "setzer",
@@ -43,6 +43,22 @@
             ]
         },
         {
+            "name": "boost",
+            "buildsystem": "simple",
+            "build-commands": [
+                "mkdir -p ${FLATPAK_DEST}/include",
+                "mv boost ${FLATPAK_DEST}/include"
+            ],
+            "cleanup": ["/include"],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.73.0/source/boost_1_73_0.tar.bz2",
+                    "sha256": "4eb3b8d442b426dc35346235c8733b5ae35ba431690e38c6a8263dce9fcbb402"
+                }
+            ]
+        },
+        {
             "name": "poppler",
             "buildsystem": "cmake-ninja",
             "config-opts": [
@@ -53,8 +69,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://poppler.freedesktop.org/poppler-20.10.0.tar.xz",
-                    "sha256": "434ecbbb539c1a75955030a1c9b24c7b58200b7f68d2e4269e29acf2f8f13336"
+                    "url": "https://poppler.freedesktop.org/poppler-21.10.0.tar.xz",
+                    "sha256": "964b5b16290fbec3fae57c2a5bcdea49bb0736bd750c3a3711c47995c9efc394"
                 }
             ]
         },
