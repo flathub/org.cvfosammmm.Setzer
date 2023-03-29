@@ -6,7 +6,10 @@
     "add-extensions": {
         "org.freedesktop.Sdk.Extension.texlive": {
             "directory": "texlive",
-            "version": "22.08"
+            "version": "22.08",
+            "subdirectories": true,
+            "autodelete": true,
+            "no-autodownload": false
         }
     },
     "command": "setzer",
