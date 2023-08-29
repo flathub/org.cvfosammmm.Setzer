@@ -36,20 +36,6 @@
             ]
         },
         {
-            "name": "gspell",
-            "cleanup": [
-                "/bin",
-                "/include"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gspell/1.12/gspell-1.12.0.tar.xz",
-                    "sha256": "40d2850f1bb6e8775246fa1e39438b36caafbdbada1d28a19fa1ca07e1ff82ad"
-                }
-            ]
-        },
-        {
             "name": "boost",
             "buildsystem": "simple",
             "build-commands": [
@@ -176,7 +162,7 @@
             "config-opts": [
                 "-Ddocs=false",
                 "-Dvapi=false",
-                "-Dbackends=gtk3"
+                "-Dbackends=gtk4"
             ],
             "sources": [
                 {
@@ -196,8 +182,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/cvfosammmm/Setzer.git",
-                    "tag": "v56",
-                    "commit": "0de63d18c7fd47c23f5ec6dc78b484499195d50b"
+                    "tag": "v57",
+                    "commit": "5dd51905c027f91da260607370d13e554b20b411"
                 }
             ]
         }
