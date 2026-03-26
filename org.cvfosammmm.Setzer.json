@@ -27,6 +27,12 @@
         "--env=TEXINPUTS=.:~/texmf/:",
         "--metadata=X-DConf=migrate-path=/org/cvfosammmm/Setzer/"
     ],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/share/man",
+        "/share/pkgconfig"
+    ],
     "modules": [
         {
             "name": "texlive",
